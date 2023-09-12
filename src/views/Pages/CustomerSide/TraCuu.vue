@@ -2,9 +2,6 @@
     <div class="wrapper">
         <div id="Main">
             <div class="HomePage-body">
-                <vueper-slides autoplay fade lazy lazy-load-on-drag :touchable="false" :fixed-height="0.6*screenHeight +'px'">
-                    <vueper-slide v-for="(slide, i) in slides" :key="i" :image="slide.image" class="vslide" />
-                </vueper-slides>
                 <div class="content">
                     <div class="PageTitle">
                         <h2 class="title">TRA CỨU THÔNG TIN</h2>
