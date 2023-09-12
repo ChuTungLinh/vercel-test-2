@@ -68,7 +68,6 @@
             stripe style="height:100%" height="100%" fit
             :data="tableData.content">
 
-
             <el-table-column
             label="Mã hóa đơn"
             header-align="center"
