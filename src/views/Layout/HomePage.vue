@@ -681,7 +681,6 @@ export default {
     margin-left: 20px;
     padding: 10px;
     border-radius: 10px;
-    max-height: 45px;
 
     .text {
         //color: white;
@@ -786,6 +785,7 @@ export default {
             padding: 10px 20px 10px 20px;
             border-radius: 0;
             border-bottom: 1px solid #72bdff;
+            max-height: 45px;
 
             .text {
                 color: white;
