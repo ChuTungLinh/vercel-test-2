@@ -1,0 +1,147 @@
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+h6{
+    font-size: 1rem;
+}
+h5{
+    font-size: 1.25rem;
+}
+h4{
+    font-size: 1.5rem;
+}
+h3{
+    font-size: 1.75rem;
+}
+h2{
+    font-size: 2rem;
+}
+h1{
+    font-size: 2.25rem;
+}
+
+.header{
+    margin-top: 72px;
+}
+
+.tbl .el-table .thead-light th {
+    color: #fff;
+    font-size: 0.775rem;
+    font-weight: 600;
+    background-color: #28527A;
+}
+
+.tbl .el-table td {
+    color: black;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.tbl .el-table .cell {
+    word-break: break-word;
+    line-height: 20px;
+
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+}
+
+.tbl .el-table__fixed-right {
+    background-color: #fff;
+}
+
+
+.el-card__header {
+    padding: 0px !important;
+}
+
+.el-card__body {
+    padding: 5px 0px !important;
+}
+
+.pagination .el-select .el-input .el-input__inner {
+    height: 28px !important;
+}
+
+.tbl .el-table .thead-light th {
+    font-size: 0.755rem !important;
+}
+
+.tbl .el-table thead th {
+    padding-left: 5px;
+    padding-right: 5px;
+    border-top: 1px solid #28527A;
+}
+
+.tbl .el-table .el-table-column--selection .cell {
+    min-width: auto;
+}
+
+.tbl .el-table .el-button--text {
+    padding: 0px;
+}
+
+div.el-table thead th {
+    padding: 0px;
+}
+
+div.el-table .el-table__header .cell {
+    min-height: 40px;
+}
+
+
+.btn {
+    padding: 0.225rem 0.5rem;
+    font-size: 0.755rem;
+}
+
+.modalTemp .modal-body {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+
+.modalTemp .modal-footer{
+    justify-content: end;
+}
+
+.el-tag {
+    height: 25px !important;
+    line-height: 23px !important;
+}
+
+.alert-dismissible .close {
+    top: 20px;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: #007bff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0);
+}
+
+.el-drawer__header {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.el-drawer__body table tr td {
+    padding-bottom: 6px;
+    padding-top: 6px;
+}
+
+
+@media only screen and (max-width: 768px) {
+.header {
+    margin-top: 55px;
+}
+}

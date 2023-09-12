@@ -1,0 +1,94 @@
+.invoiceprint{
+    border: 1px solid #ccc;
+}
+
+.header-invoiceprint{
+    display: flex;
+    height: 100px;
+    margin-top: 32px;
+    padding: 3px;
+    margin-bottom: 12px;
+}
+
+.khachhang-container-invoiceprint,
+.congty-container-invoiceprint{
+    border-top:solid #ccc 1px ;
+    border-bottom:solid #ccc 1px ;
+    padding-left: 6px;
+}
+.left-header-invoiceprint{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+.between-header-invoiceprint{
+    width: 50%;
+    text-align: center;
+}
+.right-header-invoiceprint{
+    width: 25%;
+    border: 1px solid #ccc;
+    margin: 6px 6px 6px 0px;
+    font-weight: bold;
+    text-align: center;
+}
+.container-invoiceprint{
+    padding: 0px 3px; 
+}
+.button-invoiceprinting{
+    position: absolute;
+    right: 24px;
+    bottom: 12px;
+    /* left: 50%; */
+    min-width: 150px;
+    margin-top: 12px;
+}
+
+.footer-invoiceprint{
+    text-align: center;
+    height: 170px;
+}
+.container-invoiceprint p,
+.between-header-invoiceprint p,
+.between-header-invoiceprint h4,
+.right-header-invoiceprint p{
+    margin: 0px;
+}
+fieldset{
+    border: 1px solid black !important;
+    font-size: 13px !important;
+}
+legend{
+    width: auto !important;
+
+    margin-left: 12px !important;
+}
+.test2{
+    height: 45px;
+    margin-right: 12px;
+}
+.test3{
+    margin-right: 12px !important;
+    margin-bottom: 0px;
+}
+fieldset.thongtinhd,
+fieldset.thongtinkh {
+    height: 410px;
+}
+.el-dialog__header {
+    margin-top: -15px;
+    margin-bottom: 8px;
+}
+
+.right-footer-chitiethoadon::after{
+    content: "";
+    border-bottom: 1px solid black;
+    display: flex;
+    width: 100%;
+    position: absolute;
+    left: 0;
+  }
+  .footer-chitiethoadon{
+    margin: 0px 0px 6px 0px;
+  }
+
