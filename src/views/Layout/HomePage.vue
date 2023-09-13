@@ -189,6 +189,7 @@
 
 import { ZoomCenterTransition } from "vue2-transitions";
 import { convertToMoney } from "../../util/stringUtils";
+
 export default {
     components: {
         ZoomCenterTransition,
@@ -330,7 +331,7 @@ export default {
                 if (res.code == 200) {
                     this.company = res.data[0]
                     localStorage.setItem("CompanyID", this.company.nMaCongTy)
-                    localStorage.setItem("CompanyName", this.company.cTenCongTy)
+                    this.$store.commit("setCompany", this.company);
                 }
             })
         }
@@ -797,7 +798,6 @@ export default {
             }
         }
     }
-
     .display-none {
         transition: all 1s ease;
         height: 0;

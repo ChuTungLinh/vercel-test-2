@@ -2,10 +2,6 @@
     <div class="wrapper">
         <div id="Main">
             <div class="HomePage-body">
-                <!-- <vueper-slides autoplay fade lazy lazy-load-on-drag :touchable="false"
-                    :fixed-height="0.7 * screenHeight + 'px'">
-                    <vueper-slide v-for="(slide, i) in slides" :key="i" :image="slide.image" class="vslide" />
-                </vueper-slides> -->
                 <div class="PageHero">
                     <div class="HeroImage">
                         <div class="HeroInfo">
@@ -119,6 +115,7 @@
 import { VueperSlides, VueperSlide } from 'vueperslides'
 import 'vueperslides/dist/vueperslides.css'
 import Label from "../../Pages/components/Label.vue"
+import { mapState } from "vuex";
 
 export default {
     components: {
@@ -173,8 +170,11 @@ export default {
             return localStorage.getItem("token")
         },
         companyName() {
-            return localStorage.getItem("CompanyName")
-        }
+            return this.company.cTenCongTy
+        },
+        ...mapState({
+            company: (state) => state.company.companyList,
+        }),
     },
     methods: {
         handleJump(index) {
@@ -188,7 +188,7 @@ export default {
         ToArticle(id) {
             this.$router.push("/Article?token=" + this.token + "&id=" + id).catch(() => { /* ignore */ })
         }
-    }
+    },
 }
 </script>
 <style lang="scss" scoped>
