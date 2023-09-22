@@ -28,6 +28,12 @@ import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
 
 // plugin setupy
 
+
+import { inject } from '@vercel/analytics';
+
+
+Vue.use(inject)
+
 Vue.use(DashboardPlugin);
 Vue.use(api)
 // Make BootstrapVue available throughout your project
