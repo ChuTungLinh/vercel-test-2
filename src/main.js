@@ -32,7 +32,7 @@ import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
 import { inject } from '@vercel/analytics';
 
 
-Vue.use(inject)
+inject()
 
 Vue.use(DashboardPlugin);
 Vue.use(api)
