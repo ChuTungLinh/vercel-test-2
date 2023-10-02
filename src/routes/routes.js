@@ -52,6 +52,7 @@ const BankPage = () => import('@/views/Pages/SysAdmin/BankPage.vue');
 const RecordStatusPage = () => import('@/views/Pages/SysAdmin/RecordStatusPage.vue');
 const RolePage = () => import('@/views/Pages/SysAdmin/RolePage.vue');
 const MenuPage = () => import('@/views/Pages/SysAdmin/MenuPage.vue');
+const Swagger = () => import('@/views/Pages/SysAdmin/Swagger.vue');
 
 
 
@@ -546,6 +547,14 @@ const routes = [
         path: '/admin/record-status',
         name: 'RecordStatus',
         component: RecordStatusPage,
+        meta: {
+          noBodyBackground: true
+        }
+      },
+      {
+        path: '/admin/swagger',
+        name: 'Swagger',
+        component: Swagger,
         meta: {
           noBodyBackground: true
         }
